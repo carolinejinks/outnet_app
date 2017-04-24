@@ -33,8 +33,8 @@ n = 0
 for design in designer:
 
     c.writerow( [designer[n], links[n]] )
-    n = n + 1```
-
+    n = n + 1
+```
 The designer summaries were collected using a Wikipedia python library that I was able to $pip install and run a for loop that inserted the designer's name from my scraper into the call for each Wikipedia summary.
 
 ```summaries=[]
@@ -46,8 +46,8 @@ for n in designer:
     except wikipedia.exceptions.PageError:
         continue
     except wikipedia.exceptions.DisambiguationError:
-        continue```
-
+        continue
+```
 It was necessary to use try and except so that the function would run even if the Wikipedia page did not exist. This way,I was able to get summaries for every designer that was on Wikipedia out of my 469 designers.
 
 These summaries were then copy and pasted into my CSV, which I then converted into a Python dict so that it could be used in my **data.py** file for my Flask app.
