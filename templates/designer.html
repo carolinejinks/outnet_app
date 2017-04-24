@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div id="head">
+<h1>Detail Page for {{ designer }}</h1>
+</div>
+
+<div id="info">
+<p>Name: {{ designer }}</p>
+
+<p>You can shop this designer on the Outnet.com by following the link provided: <a href="{{ link }}">Shop {{ designer }}</a></p>
+
+<p>If you would like to learn more: {{ description }}</p>
+
+<p>All descriptions are credited to the designer's Wikipedia page.</p>
+</div>
+
+<a href="{{ url_for('index') }}">Return to search page</a>
+
+{% endblock %}

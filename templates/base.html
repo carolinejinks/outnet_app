@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>{{ the_title }}</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Sigmar+One" rel="stylesheet">
+	<!-- Instagram embed.js -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/embed-js/4.2.1/embed.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/embed-js/4.2.1/embed.min.js">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	<link href="https://fonts.googleapis.com/css?family=Oranienbaum" rel="stylesheet">
+
+</head>
+<body>
+
+
+<div id="container">
+
+
+  {% block body %}
+  {% endblock %}
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+</body>
+</html>
